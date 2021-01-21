@@ -43,15 +43,11 @@ $questions =
     <title>Google FAQ</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <?php
-            foreach($questions as $question) {
-                echo "<h2>".$question["question"]."</h2>";
-                    echo "<p>".$question["answer"]."</p>";
-            }
-            ?>
-        </li>
-    </ul>
+  <?php
+       foreach($questions as $question) {
+            echo "<h2>".$question["question"]."</h2>";
+            echo "<p>".$question["answer"]."</p>";
+        }
+    ?>
 </body>
 </html>
